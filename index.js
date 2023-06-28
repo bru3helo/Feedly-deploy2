@@ -249,4 +249,3 @@ btnBusca.addEventListener('click', () => {
     postsDiv.innerHTML += postHTML;
   })
 });
-
