@@ -193,4 +193,5 @@ const postEvents = (e) => {7
       document.getElementById('popupEditarPost').showModal();
       idLi = i;
     });
-  }
+}
+
