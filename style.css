@@ -1,0 +1,236 @@
+* {
+    margin: 0px;
+    border: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+    
+  header {
+      align-items: center;
+      display: flex;
+      font-size: 1rem;
+      justify-content: space-between;
+      margin: 3rem 3rem 0;
+  
+  }
+  
+  .logo{
+    overflow: clip;
+    width: 110px;
+    height: 32px;
+  }
+  
+  nav{
+    align-items: center;
+    display: flex;
+    color: #6d6868;
+  }
+  
+  .fbutton{
+    display: inline-block;
+    position: relative;
+    margin-right: 2rem
+  }
+  
+  .bpbutton{
+    position: relative;
+    display: flex;
+    margin-right: 2rem;
+  }
+  
+  .loginbutton{
+    margin: 8px;
+    display: 	flex;
+    align-items: center;
+    border: 1px solid #2bb24c;
+    background-color: #ffff;
+    padding: 11px 17px;
+    color: #2bb24c;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .startbutton{
+    margin: 8px;
+    margin-right: 0,5rem;
+    display: flex;
+    align-items: center;
+    padding: 11px 17px;
+    background-color: #2bb24c;
+    color: #ffff;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  
+  #text {
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 216px;
+    padding-right: 216px;
+  }
+  
+  #text h1 {
+    margin: 48px 0 0 0;
+    color:#333;
+    font-size: 56px;
+    font-family: sans-serif;
+    font-family: var(--sans-serif);
+    text-align: center; 
+    letter-spacing: -0.04em;
+  }
+  
+  #text p {
+    color:#6d6868;
+    font-size: 20px;
+    margin: 24px 0px 0px;
+    line-height: 1.5;
+  }
+  
+  .bt {
+    display: flex;
+    align-items: center;
+    padding: 11px 17px;
+    background-color: #2bb24c;
+    color: #ffff;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 3px;
+    border: none;
+    
+  }
+  
+  .bt2 {
+    display: 	flex;
+    align-items: center;
+    background-color: #ffff;
+    border: 1px solid #00000050;
+    padding: 11px 17px;
+    color: #000000;
+    font-size: 12px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .buttons-center {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    gap: 0.5rem;
+  }
+  
+  .img {
+    height: 100%;
+    width: 100%;
+    display: 	flex;
+    justify-content: center;
+  }
+  
+  .img img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  @media (max-width: 880px){
+
+    nav{
+      display: none;
+    }
+  
+    .logo{
+      display: flex;
+    }
+  
+    #text{
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  
+    #text h1 {
+      margin: 48px 0 0 0;
+      color:#333;
+      font-size: 32px;
+      font-family: sans-serif;
+      font-family: var(--sans-serif);
+      text-align: center; 
+      letter-spacing: -0.04em;
+    }
+  
+    header {
+      margin-top: 1.5rem;
+      justify-content: center;
+    }
+  
+    .img {
+      height: 100%;
+      width: 100%;
+      display: 	flex;
+      justify-content: center;
+    }
+  
+    .img img{
+      width: 100%;
+      height: 100%;
+    }
+  
+    .bt {
+      display: flex;
+      align-items: center;
+      padding: 11px 17px;
+      background-color: #2bb24c;
+      color: #ffff;
+      font-size: 12px;
+      text-decoration: none;
+      border-radius: 3px;
+      border: none;
+      
+    }
+  
+    .bt2 {
+      display: 	flex;
+      align-items: center;
+      background-color: #ffff;
+      border: 1px solid #00000050;
+      padding: 11px 17px;
+      color: #000000;
+      font-size: 12px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  
+    .buttons-center {
+      margin-bottom: 1rem;
+      margin-top: 2rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+      gap: 0.5rem;
+    }
+    
+  }
