@@ -234,3 +234,109 @@
     }
     
   }
+
+  
+main{
+  position: relative;
+  left: 20%;
+  background-color: #f9f9f9;
+  padding: 5%;
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column; 
+  border-color: #2bb24c;
+  border-radius: 6%;
+}
+
+.main-head{
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+#btcriarPostagem{
+  background-color: #2bb24c;
+  margin: 20px;
+  padding: 1% 2%;
+  color: #f9f9f9;
+  border-radius: 5px;
+}
+
+#btcriarPostagem:hover{
+  background-color: #2bb24c;
+}
+
+.post{
+  width: 100%;
+  padding: 3% 0%;
+  word-wrap: break-word;
+}
+
+.post div{
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin: 5% 0% 0% 0%;
+}
+
+.post h2{
+  font-size: 28px;
+}
+
+.post img{
+  width: 70%;
+  align-self: center;
+  margin: 5% 0%;
+}
+
+.txtBusca{
+  display: flex;
+  flex-direction: row;
+}
+
+.txtBusca input{  
+  background-color: #ededed;
+  padding: 2% 10% 2% 5%;
+  border-radius: 5px;
+}
+
+.txtBusca input:hover{
+  background-color: #e7e6e6;
+}
+
+dialog{
+  display: none;
+}
+
+#popupcriarPost[open] {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 70%;
+  font-size: 30px;
+  left: 20%;
+  top: 20%;
+  color: #000000;
+}
+
+#tituloPostagem{
+  border-radius: 5px;
+  background-color: #aedea9;
+  padding: 2%;
+  margin: 2%;
+}
+
+#postImage{
+  margin: 0% 5%;
+}
+
+.adicionarImagem{
+  font-size: 18px;
+  margin: 5% 7%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
