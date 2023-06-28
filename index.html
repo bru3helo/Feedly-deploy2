@@ -43,3 +43,46 @@
     <div class>
       <a class="img"><img src="product-hero-visual-dots@2x.cd025f02.png"></a>
     </div>
+
+<main>
+  <div class="main-head">
+    <div class="search">
+      <input type="text" id="txtBusca" placeholder="Buscar" />
+      <button class="btnBusca">Buscar</button>
+    </div>
+    <button id="btcriarPostagem">+ Novo Post</button>
+  </div>
+  <div class="postagens">
+    <dialog id="popupcriarPost">
+      <span class="close">X</span>
+      <h2>Criar nova Publicação</h2>
+      <input type="text" id="tituloPostagem" placeholder="Insira um título" />
+      <input type="text" id="conteudoPostagem" placeholder="Conteúdo">
+      <div class="adicionarImagem">
+        <p>Insira uma imagem:</p>
+        <input type="file" id="imgPostagem" accept="image/*" />
+      </div>
+      <button id="criarPublicacao">Criar publicação</button>
+    </dialog>
+    <ul class="post">
+
+    </ul>
+  </div>
+
+    <dialog id="popupEditarPost">
+      <span class="close">X</span>
+      <h2>Editar Publicação</h2>
+      <input type="text" id="tituloPostagemEditar" placeholder="Insira um título" />
+      <input type="text" id="conteudoPostagemEditar" placeholder="Conteúdo">
+      <div class="adicionarImagem">
+        <p>Insira uma imagem:</p>
+        <input type="file" id="imgPostagemEditar" accept="image/*" />
+      </div>
+      <button id="editarPublicacao">Salvar alterações</button>
+    </dialog>
+</main>
+<script src="index.js"></script>
+</body>
+
+</html>
+
