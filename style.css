@@ -234,3 +234,93 @@
     }
     
   }
+
+  #conteudoPostagem {
+    margin: 2% 0% 2% 2%;
+    border-radius: 5px;
+    background-color: #aedea9;
+    padding: 7% 10%;
+    resize: none;
+    width: 95%;
+}
+
+#popupcriarPost button{
+    background-color: #c8f1d2;
+    color: #000000;
+    padding: 2% 3%;
+    border-radius: 7px;
+    width: 35%;
+    align-self: center;
+}
+
+#popupcriarPost button:hover{
+    background-color: #2bb24c;
+}
+
+#popupcriarPost h2{
+    margin: 2% 4%;
+    font-weight:600;
+    font-size: 24px;
+}
+
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+div.button-div{
+    display: flex;
+    flex-direction: row;
+}
+
+.button-div button{
+    margin-right: 3%;
+    background-color: #2bb24c;
+    height: 25px;
+    width: 100px;
+    border-radius: 5px;
+    color:#fff;
+}
+
+button:hover{
+  cursor:pointer
+}
+
+ul{
+  list-style: none;
+}
+
+.pData{
+  font-size: 14px;
+  color:#202020;
+}
+
+#txtBusca{
+  padding-left:1rem;
+  padding-right:1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.btnBusca{
+  padding-left:1rem;
+  padding-right:1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: #2bb24c;
+  color:#fff;
+  border-radius: 0.5rem;
+}
