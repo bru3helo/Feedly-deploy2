@@ -194,4 +194,59 @@ const postEvents = (e) => {7
       idLi = i;
     });
 }
+// Botão que fecha o popup de edição
+const btfecharEditar = document.getElementById('popupEditarPost').querySelector('.close');
+btfecharEditar.addEventListener('click', function() {
+  closeEditar();
+});
+
+// Botão que salva as alterações da postagem
+const btSalvarEditar = document.getElementById('editarPublicacao');
+btSalvarEditar.addEventListener('click', editarPostagem);
+
+// Filtro de busca
+const btnBusca = document.querySelector('.btnBusca')
+btnBusca.addEventListener('click', () => {
+  const input = document.getElementById('txtBusca');
+
+  if(input.value.length <= 0){
+    exibirPost();
+    return;
+  }
+
+  //Filtro de busca pelo nome
+  const postsFilter = posts.filter(post => post.titulo.includes(input.value));
+  const postsDiv = document.querySelector('.post');
+  postsDiv.innerHTML = '';
+
+  postsFilter.reverse().forEach(post => {
+    const postHTML = `
+      <li class="post-item">
+        <div class="button-div">
+          <button class='excluirBtn'> Excluir
+          </button>
+          <button class='editarBtn'> Editar
+          </button>
+        </div>
+        <h2 class='pTitle'>${post.titulo}</h2>
+        <p class='pConteudo'>${post.conteudo}</p>
+        <img class'pImg' src="${post.imagem}" alt="Imagem">
+        <p class='pData'>Publicado em: ${post.data.dia}/${post.data.mes}/${post.data.ano}</p>
+
+        <dialog class="popupEditarPost">
+          <span class="close">X</span>
+          <h2>Editar Publicação</h2>
+          <input type="text" id="tituloPostagemEditar" placeholder="Insira um novo título" />
+          <input type="text" id="conteudoPostagemEditar" placeholder="Conteúdo">
+          <div class="adicionarImagem">
+              <p>Insira uma imagem:</p>
+              <input type="file" id="imgPostagemEditar" accept="image/*" />
+          </div>
+          <button class="editarPublicacao">Editar publicação</button>
+        </dialog>
+      </li>
+    `;
+    postsDiv.innerHTML += postHTML;
+  })
+});
 
