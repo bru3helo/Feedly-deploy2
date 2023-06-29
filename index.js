@@ -8,7 +8,7 @@ class Postagem {
   }
   
   // Popup criação de postagens
-  const popupaddpost = document.getElementById('popupcriarPost');7
+  const popupaddpost = document.getElementById('popupcriarPost');
   const popupEditarPost = document.getElementById('popupEditarPost');
   const btNovaPublicacao = document.getElementById('btcriarPostagem');
   const btfechar = document.querySelector('.close');
@@ -127,7 +127,7 @@ function salvarPostagens() {
     });
   }
   //Cria as situações a que os eventos devem responder (excluir e editar)
-const postEvents = (e) => {7
+const postEvents = (e) => {
     const ul = e.target.closest(".post");
     
     const li = e.target.closest(".post-item");
