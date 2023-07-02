@@ -431,3 +431,7 @@ ul{
   color:#fff;
   border-radius: 0.5rem;
 }
+
+input:invalid {
+  border-color: red;
+}
