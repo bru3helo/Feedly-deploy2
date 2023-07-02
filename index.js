@@ -249,3 +249,27 @@ btnBusca.addEventListener('click', () => {
     postsDiv.innerHTML += postHTML;
   })
 });
+
+ // Adiciona os eventos aos botões de editar e excluir das postagens filtradas
+ const editarButtonsFilter = document.querySelectorAll('.post-item .editarBtn');
+ editarButtonsFilter.forEach((button, index) => {
+   button.addEventListener('click', function() {
+     const post = postsFilter[index];
+     document.getElementById('tituloPostagemEditar').value = post.titulo;
+     document.getElementById('conteudoPostagemEditar').value = post.conteudo;
+     document.getElementById('popupEditarPost').showModal();
+     idLi = posts.indexOf(post);
+   });
+ });
+
+ const excluirButtonsFilter = document.querySelectorAll('.post-item .excluirBtn');
+ excluirButtonsFilter.forEach((button, index) => {
+   button.addEventListener('click', function() {
+     const post = postsFilter[index];
+     const postIndex = posts.indexOf(post);
+     posts.splice(postIndex, 1);
+     salvarPostagens();
+     exibirPost();
+   });
+ });
+;
