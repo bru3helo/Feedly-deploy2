@@ -6,6 +6,27 @@ class Postagem {
       this.data = data;
     }
   }
+
+  class Popup {
+    constructor(elementId) {
+      this.popupElement = document.getElementById(elementId);
+    }
+  
+    show() {
+      this.popupElement.showModal();
+    }
+  
+    close() {
+      this.popupElement.close();
+    }
+  
+    clearFields() {
+      const inputFields = this.popupElement.querySelectorAll('input, textarea');
+      inputFields.forEach((field) => {
+        field.value = '';
+      });
+    }
+  }
   
   // Popup criação de postagens
   const popupaddpost = document.getElementById('popupcriarPost');
