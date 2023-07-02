@@ -56,8 +56,8 @@
     <dialog id="popupcriarPost">
       <span class="close">X</span>
       <h2>Criar nova Publicação</h2>
-      <input type="text" id="tituloPostagem" placeholder="Insira um título" />
-      <input type="text" id="conteudoPostagem" placeholder="Conteúdo">
+      <input type="text" id="tituloPostagem" placeholder="Insira um título" required pattern=".{1,}" />
+      <input type="text" id="conteudoPostagem" placeholder="Conteúdo" required pattern=".{1,}">
       <div class="adicionarImagem">
         <p>Insira uma imagem:</p>
         <input type="file" id="imgPostagem" accept="image/*" />
@@ -85,4 +85,5 @@
 </body>
 
 </html>
+
 
